@@ -58,11 +58,11 @@
 <section id="action ">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 ">
+      <div class="col-md-4 ">
         <a class="btn btn-outline-secondary mt-4" href="#" role="button" data-toggle="modal" data-target="#ajoutarticle">
           <i class="fas fa-plus mr-3"></i> Ajoutez un article</a>
       </div>
-      <div class="col-md-9 ">
+      <div class="col-md-8 ">
         <a class="btn btn-outline-secondary mt-4" href="#" role="button" data-toggle="modal"
         data-target="#ajoutannonce">
           <i class="fas fa-plus mr-3"></i> Ajoutez une annonce</a>
@@ -71,7 +71,7 @@
   </div>
 </section>
 
-<!-- MODAL -->
+<!-- MODAL ARTICLE -->
 
 <div class="modal fade" id="ajoutarticle" tabindex="-1" role="dialog" aria-labelledby="ajoutarticleLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -111,6 +111,50 @@
   </div>
 </div>
 
+<!-- MODAL ANNONCE -->
+
+<div class="modal fade" id="ajoutannonce" tabindex="-1" role="dialog" aria-labelledby="ajoutannonceLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ajoutannonce">Déposer une annonce</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <!-- FORMS -->
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nom et prénom</label>
+            <input type="Nom prénom" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Titre de l'annonce</label>
+            <input type="titre" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Prix</label>            
+            <input type="prix" class="form-control" id="exampleInputPassword1">
+            
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Texte de l'annonce</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+          <div class="form-group form-check">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-primary">Enregistré</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
