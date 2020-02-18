@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
-    <!-- ICONE CDNJS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <title>Document</title>
+  <!-- ICONE CDNJS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
 
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" href="/ressource/style.css">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/ressource/style.css">
 
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,6 +29,9 @@
       <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">ACCUEIL <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">TABLEAU DE BORD</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">ACTUALITÉS</a>
@@ -39,9 +46,9 @@
             <i class="fas fa-user">Bienvenue</i>
           </a>
           <div class="dropdown-menu ">
-            <a href="#" class="dropdown-item"><i class="fas fa-user-circle">Profil</i> 
+            <a href="#" class="dropdown-item"><i class="fas fa-user-circle">Profil</i>
             </a>
-            <a href="#" class="dropdown-item"><i class="fas fa-cog">Paramétres</i> 
+            <a href="#" class="dropdown-item"><i class="fas fa-cog">Paramétres</i>
             </a>
           </div>
         </li>
@@ -51,111 +58,215 @@
           </a>
         </li>
       </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER  -->
+  <header>
+    <div class="container mt-4 text-secondary">
+      <div class="row">
+        <div class="col-md-6">
+          <h1><i class="fas fa-cog"></i>Talbeau de bord</h1>
         </div>
-      </nav>
-
-  <!-- BUTTON ADD -->
-<section id="action ">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 ">
-        <a class="btn btn-outline-secondary mt-4" href="#" role="button" data-toggle="modal" data-target="#ajoutarticle">
-          <i class="fas fa-plus mr-3"></i> Ajoutez un article</a>
-      </div>
-      <div class="col-md-8 ">
-        <a class="btn btn-outline-secondary mt-4" href="#" role="button" data-toggle="modal"
-        data-target="#ajoutannonce">
-          <i class="fas fa-plus mr-3"></i> Ajoutez une annonce</a>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- MODAL ARTICLE -->
 
-<div class="modal fade" id="ajoutarticle" tabindex="-1" role="dialog" aria-labelledby="ajoutarticleLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="ajoutarticle">Ajouter un article</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
 
-        <!-- FORMS -->
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Nom et prénom</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <!-- BUTTON ADD -->
+    <section id="action ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a class="btn btn-outline-white mt-4 bg-warning" href="#" role="button" data-toggle="modal"
+              data-target="#ajoutarticle">
+              <i class="fas fa-plus mr-3 "></i> Ajoutez un article</a>
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Titre de l'article</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+          <div class="col-md-8 ">
+            <a class="btn btn-outline-white mt-4 bg-success" href="#" role="button" data-toggle="modal"
+              data-target="#ajoutannonce">
+              <i class="fas fa-plus mr-3"></i> Ajoutez une annonce</a>
           </div>
-          <div class="form-group">
-            <label for="exampleFormControlFile1">Example file input</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-          </div>
-          <div class="form-group form-check">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>          
-        </form>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-        <button type="button" class="btn btn-primary">Enregistré</button>
+    </section>
+
+    <!-- MODALS ARTICLE -->
+
+    <div class="modal fade" id="ajoutarticle" tabindex="-1" role="dialog" aria-labelledby="ajoutarticleLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ajoutarticle">Ajouter un article</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <!-- FORMS -->
+            <form>
+              <div class="form-group">
+                <label for="ajoutarticle">Nom et prénom</label>
+                <input type="email" class="form-control" id="ajoutarticle" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="ajoutarticle">Titre de l'article</label>
+                <input type="password" class="form-control" id="ajoutarticle">
+              </div>
+              <div class="form-group">
+                <label for="ajoutarticle">Photos :</label>
+                <input type="file" class="form-control-file" id="ajoutarticle">
+              </div>
+              <div class="form-group form-check">
+                <h4>Texte de l'article :</h4>
+                <textarea name="editor1" class="form-control" id="ajoutarticle" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            <button type="button" class="btn btn-primary">Enregistré</button>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <!-- MODAL ANNONCE -->
+
+    <div class="modal fade" id="ajoutannonce" tabindex="-1" role="dialog" aria-labelledby="ajoutannonceLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ajoutannonce">Déposer une annonce</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <!-- FORMS -->
+            <form>
+              <div class="form-group">
+                <label for="ajoutannonce">Nom et prénom</label>
+                <input type="Nom prénom" class="form-control" id="ajoutannonce" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Titre de l'annonce</label>
+                <input type="titre" class="form-control" id="ajoutannonce">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Prix</label>
+                <input type="tel" value class="nude" class="form-control" id="ajoutannonce">
+                <span class="unit pls"> € </span>
+
+
+              </div>
+              <div class="form-group">
+                <label for="ajoutannonce">Photos :</label>
+                <input type="file" class="form-control-file" id="ajoutannonce">
+              </div>
+              <div class="form-group form-check">
+                <h4>Texte de l'annonce :</h4>
+                <textarea name="editor1" class="form-control" id="ajoutannonce" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            <button type="button" class="btn btn-primary">Enregistré</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+<!-- TABLES  -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <table class="table mt-5">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Titre</th>
+            <th scope="col">Catégorie</th>
+            <th scope="col">Éditeur</th>
+            <th scope="col">Date</th>
+            <th scope="col">Validation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      
+  
+      
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
-
-<!-- MODAL ANNONCE -->
-
-<div class="modal fade" id="ajoutannonce" tabindex="-1" role="dialog" aria-labelledby="ajoutannonceLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="ajoutannonce">Déposer une annonce</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-
-        <!-- FORMS -->
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Nom et prénom</label>
-            <input type="Nom prénom" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Titre de l'annonce</label>
-            <input type="titre" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Prix</label>            
-            <input type="prix" class="form-control" id="exampleInputPassword1">
-            
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlFile1">Texte de l'annonce</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-          </div>
-          <div class="form-group form-check">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>          
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-        <button type="button" class="btn btn-primary">Enregistré</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 
 
@@ -182,8 +293,13 @@
 
 
 <!-- SCRIPT -->
+<script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
 </body>
 </html>
