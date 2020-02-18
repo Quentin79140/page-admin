@@ -20,24 +20,21 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand mr-5" href="#"> VW AUTO <i class="fas fa-car-crash"></i> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">ACCUEIL <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="#index.html">TABLEAU DE BORD</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">TABLEAU DE BORD</a>
+          <a class="nav-link" href="#actu.html">ACTUALITÉS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">ACTUALITÉS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">ANNONCE</a>
+          <a class="nav-link" href="#annonce.html">ADMINISTRATEUR</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto text-dark">
@@ -66,7 +63,7 @@
     <div class="container mt-4 text-secondary">
       <div class="row">
         <div class="col-md-6">
-          <h1><i class="fas fa-cog"></i>Talbeau de bord</h1>
+          <h1><i class="fas fa-user-cog mr-2"></i><ins>Tableau de bord</ins></h1>
         </div>
       </div>
     </div>
@@ -183,90 +180,171 @@
     </div>
   </header>
 
-  
-<!-- TABLES  -->
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-9">
-      <table class="table mt-5">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Titre</th>
-            <th scope="col">Catégorie</th>
-            <th scope="col">Éditeur</th>
-            <th scope="col">Date</th>
-            <th scope="col">Validation</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">6</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">7</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-      
-  
-      
-        </tbody>
+  <!-- TABLES  -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table mt-5">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Titre</th>
+              <th scope="col">Catégorie</th>
+              <th scope="col">Éditeur</th>
+              <th scope="col">Date</th>
+              <th scope="col">Rendu</th>
+              <th scope="col">Validation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>GOLF 4</td>
+              <td>Annonce</td>
+              <td>John Doe</td>
+              <td>14/05/2020</td>
+              <td>
+                <a href="#" class="btn btn-outline-light btn-sm bg-secondary">Détail</a>
+              </td>
+              <td>
+                <a href="#" class="btn btn-outline-light btn-sm" title="Valider"><i
+                    class="icone fas fa-check-circle text-success"></i></a>
+                <a href="#" class="btn btn-outline-light btn-sm" title="Attente"><i
+                    class="icone fas fa-pause-circle text-secondary"></i></a>
+                <a href="#" class="btn btn-outline-light btn-sm" title="Refuser"><i
+                    class="icone fas fa-times-circle text-danger"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>GOLF 2</td>
+              <td>Annonce</td>
+              <td>Harry Cobeure</td>
+              <td>02/02/2020</td>
+              <td> <a href="#" class="btn btn-outline-light btn-sm bg-secondary">Détail</a></td>
+              <td>
+                <a href="#" class="btn btn-outline-light btn-sm" title="Valider"><i
+                    class="icone fas fa-check-circle text-success"></i></a>
+                <a href="#" class="btn btn-outline-light btn-sm" title="Attente"><i
+                    class="icone fas fa-pause-circle text-secondary"></i></a>
+                <a href="#" class="btn btn-outline-light btn-sm" title="Refuser"><i
+                    class="icone fas fa-times-circle text-danger"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>GOLF 5</td>
+              <td>Annonce</td>
+              <td>Sarah Croche</td>
+              <td>02/11/2020</td>
+              <td>
+                <a href="#" class="btn btn-outline-light btn-sm bg-secondary">Détail</a>
+              </td>
+              <td>
+                <a href="#" class="btn btn-outline-light btn-sm" title="Valider"><i
+                    class="icone fas fa-check-circle text-success"></i></a>
+                <a href="#" class="btn btn-outline-light btn-sm" title="Attente"><i
+                    class="icone fas fa-pause-circle text-secondary"></i></a>
+                <a href="#" class="btn btn-outline-light btn-sm" title="Refuser"><i
+                    class="icone fas fa-times-circle text-danger"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>GOLF 7</td>
+              <td>Annonce</td>
+              <td>Sandy Kilo</td>
+              <td>21/06/2020</td>
+              <td> <a href="#" class="btn btn-outline-light btn-sm bg-secondary">Détail</a></td>
+              <td>
+                <a href="#" class="btn btn-outline-light btn-sm" title="Valider"><i
+                    class="icone fas fa-check-circle text-success"></i></a>
+                <a href="#" class="btn btn-outline-light btn-sm" title="Attente"><i
+                    class="icone fas fa-pause-circle text-secondary"></i></a>
+                <a href="#" class="btn btn-outline-light btn-sm" title="Refuser"><i
+                    class="icone fas fa-times-circle text-danger"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>GOLF 8</td>
+              <td>Article</td>
+              <td>Kelly Diote</td>
+              <td>08/08/2020</td>
+              <td>
+                <a href="#" class="btn btn-outline-light btn-sm bg-secondary">Détail</a>
+              </td>
+              <td>
+                <a href="#" class="btn btn-outline-light btn-sm" title="Valider"><i
+                    class="icone fas fa-check-circle text-success"></i></a>
+                <a href="#" class="btn btn-outline-light btn-sm" title="Attente"><i
+                    class="icone fas fa-pause-circle text-secondary"></i></a>
+                <a href="#" class="btn btn-outline-light btn-sm" title="Refuser"><i
+                    class="icone fas fa-times-circle text-danger"></i></a>
+              </td>
+      </div>
+      </td>
+      </tr>
+      </tbody>
       </table>
     </div>
   </div>
-</div>
+
+
+  <!-- DETAIL -->
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card text-center bg-primary text-white mt-5">
+          <div class="card-body">
+            <h3>Éditer</h3>
+            <h4 class="display-4 ">
+              <i class="fas fa-folder mr-4"></i>5
+            </h4>
+            <a href="#" class="btn btn-outline-light btn-sm bg-white text-primary">Voir</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center bg-success text-white mt-5">
+          <div class="card-body">
+            <h3>Valider</h3>
+            <h4 class="display-4 ">
+              <i class="fas fa-check-circle mr-4"></i>0
+            </h4>
+            <a href="#" class="btn btn-outline-light btn-sm bg-white text-success">Voir</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center bg-secondary text-white mt-5">
+          <div class="card-body">
+            <h3>En Attente</h3>
+            <h4 class="display-4 ">
+              <i class="fas fa-pause-circle mr-4"></i>0
+            </h4>
+            <a href="#" class="btn btn-outline-light btn-sm bg-white text-secondary">Voir</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center bg-danger text-white mt-5">
+          <div class="card-body">
+            <h3>Refuser</h3>
+            <h4 class="display-4 ">
+              <i class="fas fa-times-circle mr-4"></i>0
+            </h4>
+            <a href="#" class="btn btn-outline-light btn-sm bg-white text-danger">Voir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
 
 
 
@@ -292,14 +370,21 @@
 
 
 
-<!-- SCRIPT -->
-<script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- SCRIPT -->
+  <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
 
-<script>
-    CKEDITOR.replace( 'editor1' );
-</script>
+  <script>
+    CKEDITOR.replace('editor1');
+  </script>
 </body>
+
 </html>
